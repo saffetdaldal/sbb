@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim - SBB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="bg-primary text-white text-center p-4">
+    <h1>İletişim</h1>
+    <p>Bizimle iletişime geçin</p>
+  </header>
+
+  <main class="container my-5">
+    <form action="iletisim.php" method="POST">
+      <div class="mb-3">
+        <label for="ad" class="form-label">Adınız Soyadınız</label>
+        <input type="text" class="form-control" id="ad" name="ad" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-posta</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mesaj" class="form-label">Mesajınız</label>
+        <textarea class="form-control" id="mesaj" name="mesaj" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Gönder</button>
+    </form>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    © 2025 Sakarya Büyükşehir Belediyesi
+  </footer>
+
+</body>
+</html>
